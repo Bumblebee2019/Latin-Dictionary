@@ -18,7 +18,7 @@ the option he needs.
 (The "Progress" paragraph below discusses the current stage the project is in)
 
 ## Progress
-**October 19, 2022:** Uploaded the first working prototype! In this first version, I implemented the 2nd option from the user menu, which is a conjugation/declension table.
+**October 19, 2022:** Uploaded the first working prototype! In this first version, I implemented the 2nd option from the user menu, which is a conjugation/declension table. (The comments in the output are for my understanding and easier debugging. I will, of course, remove them for the final version)
 
 Entering a noun "undae", which means "of a wave":
 ![](Pictures/noun_example_working_prototype.PNG)
