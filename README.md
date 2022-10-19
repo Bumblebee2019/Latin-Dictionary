@@ -24,6 +24,7 @@ Entering a noun "undae", which means "of a wave":
 Entering a verb "petivit", which means "He/she aims at":
 ![](Pictures/I_verb_example_working_prototype.PNG)
 ![](Pictures/2_verb_example_working_prototype.PNG)
+(This is not an entire table, but I think this will suffice for a visual example!)
 ## Learning and Challenges
 
 ## References & Resources Utilized
