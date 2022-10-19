@@ -10,4 +10,14 @@ The final version of the dictionary will have a user menu with the following opt
 2) Display a conjugation/declension table for the entered word/sentence
 3) Display both the table and the translation
 
+A user will be prompted to enter a Latin term or sentence. Then, the menu described above will appear and by pressing 1, 2, or 3 on the keyboard, the user can choose
+the option he needs.
+
+(The "Progress" paragraph below discusses the current stage the project is in)
+
 ## Progress
+October 19, 2022: Uploaded the first working prototype! In this first version, I implemented the 2nd option from the user menu, which is a conjugation/declension table.
+
+## Learning and Challenges
+
+## References & Resources Utilized
