@@ -20,6 +20,10 @@ October 19, 2022: Uploaded the first working prototype! In this first version, I
 
 Entering a noun "undae", which means "of a wave":
 ![](Pictures/noun_example_working_prototype.PNG)
+
+Entering a verb "petivit", which means "He/she aims at":
+![](Pictures/I_verb_example_working_prototype.PNG)
+![](Pictures/2_verb_example_working_prototype.PNG)
 ## Learning and Challenges
 
 ## References & Resources Utilized
