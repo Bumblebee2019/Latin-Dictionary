@@ -1,5 +1,6 @@
 # Latin Dictionary
 ![](Pictures/Rome_splendor.jpg)
+
 *The Consummation* by Thomas Cole, 1836
 ## Why a Latin Dictionary?
 This project is a confluence of my two passions, Natural Language Processing and Latin. When reading in Latin, which is a highly inflected language, I often encounter
