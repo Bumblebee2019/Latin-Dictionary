@@ -29,7 +29,7 @@ Entering a verb "petivit", which means "He/she aims at":
 (This is not an entire table, but I think this will suffice for a visual example!)
 
 I wanted to include these visuals of a noun and a verb to show the dictionary's functionality in the most simple case, but below we will take a look at a sentence.
-
+![](Pictures/veritas_numquam_perit.jpg)
 A user wants to see a declension/ conjugation tables for his favorite quote by Seneca: "Veritas numquam perit". 
 
 First, the program will remove any non-Latin characters, such as commas and periods (yes, the user added weird punctuation to prove a point). The clean sentence is displayed under the "SENTENCES" comment. Then, we take the only element in the list, because we want to be working with a string. Under the "SENTENCE" header, the sentence displyed has a string type. The rest of the headers are quite self-explanatory. The goal is now to break the sentence into even smaller pieces, or "tokens", where each word is a token. Then, the lemmatization step is very important; it extracts the canonical form of the word from its declined version and puts the original word and its lemma in a pair. Then, we only work with a list of lemmas, from which we derive the conjugation table.
