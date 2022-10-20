@@ -4,7 +4,7 @@
 *The Consummation* by Thomas Cole, 1836
 ## Why a Latin Dictionary?
 This project is a confluence of my two passions, Natural Language Processing and Latin. When reading in Latin, which is a highly inflected language, I often encounter
-unfamiliar verbs and nouns, and knowing tense, gender, and case is vital to the understanding of the text. I would often use tools such as Whitaker's Words and Wiktionary, but when I travel or have a poor Internet connection, a dictionary running on my local computer would be so much more convenient. So, I decided to create my own (for now, a command-line) dictionary, which would combine the functionality of the two existing dictionaries I mentioned. 
+unfamiliar verbs and nouns, and knowing tense, gender, and case is vital to the understanding of the text. I would often use tools such as Whitaker's Words and Wiktionary, but when I travel or have a poor Internet connection, a dictionary running on my local computer would be so much more convenient. So, I decided to create my own (for now, a command-line) dictionary, which would combine the functionality of the two existing dictionaries I mentioned. I used CLTK (Classical Language Toolkit).
 
 ## Dictionary Functionality
 The final version of the dictionary will have a user menu with the following options:
@@ -27,8 +27,10 @@ Entering a verb "petivit", which means "He/she aims at":
 ![](Pictures/I_verb_example_working_prototype.PNG)
 ![](Pictures/2_verb_example_working_prototype.PNG)
 (This is not an entire table, but I think this will suffice for a visual example!)
+
+
 ## Learning and Challenges
 
 ## A Word on u/v and i/j
-
+In Latin, letters "u" and "v" are often being used interchangeably, as well as "i" and "j". When working with a large text, it is important to standardize data, and change all "v" characters to "u" and all "j" characters to "i". When I first started familiarize myself with CLTK, I took a Latin text and standardised it by changing the aforementioned letters to fit a single standard with the help of JVReplacer(). However, my dictionary works with a user's input, which is later processed by many other functions which do not need the text to be standardised. In fact, this kind of standardization can render a word unrecognizeable. For instance, the function can recognize the word for "door", which is "janua", but would have trouble recognizing the less common "ianua". Also, the word "wine", or "vinum" would not be recognized if it was spelled as "uinum". Ultimately, if there is a large text that needs to be standardized for further analysis, being consistent with the transcription is crucial, but when the goal is to translate a word or a short sentence, it is best to rely on the most common spelling.
 ## References & Resources Utilized
