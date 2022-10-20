@@ -28,8 +28,16 @@ Entering a verb "petivit", which means "He/she aims at":
 ![](Pictures/2_verb_example_working_prototype.PNG)
 (This is not an entire table, but I think this will suffice for a visual example!)
 
+I wanted to include these visuals of a noun and a verb to show the dictionary's functionality in the most simple case, but below we will take a look at a sentence.
+
+A user wants to see a declension/ conjugation tables for his favorite quote by Seneca: "Veritas numquam perit". 
+
+First, the program will remove any non-Latin characters, such as commas and periods (yes, the user added weird punctuation to prove a point). The clean sentence is displayed under the "SENTENCES" comment. Then, we take the only element in the list, because we want to be working with a string. Under the "SENTENCE" header, the sentence displyed has a string type. The rest of the headers are quite self-explanatory. The goal is now to break the sentence into even smaller pieces, or "tokens", where each word is a token. Then, the lemmatization step is very important; it extracts the canonical form of the word from its declined version and puts the original word and its lemma in a pair. Then, we only work with a list of lemmas, from which we derive the conjugation table.
+
+
 
 ## Learning and Challenges
+I am learning NLP on my own, so much terminology was new. I had to learn about data standardixation, tokenization, lemmatization, etc.  
 
 ## A Word on u/v and i/j
 In Latin, letters "u" and "v" are often being used interchangeably, as well as "i" and "j". When working with a large text, it is important to standardize data, and change all "v" characters to "u" and all "j" characters to "i". When I first started familiarize myself with CLTK, I took a Latin text and standardised it by changing the aforementioned letters to fit a single standard with the help of JVReplacer(). However, my dictionary works with a user's input, which is later processed by many other functions which do not need the text to be standardised. In fact, this kind of standardization can render a word unrecognizeable. For instance, the function can recognize the word for "door", which is "janua", but would have trouble recognizing the less common "ianua". Also, the word "wine", or "vinum" would not be recognized if it was spelled as "uinum". Ultimately, if there is a large text that needs to be standardized for further analysis, being consistent with the transcription is crucial, but when the goal is to translate a word or a short sentence, it is best to rely on the most common spelling.
