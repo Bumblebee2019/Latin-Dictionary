@@ -46,6 +46,17 @@ For #2, I did not add much, because I already had the functionality implemented.
 
 For #3, I will only need to add another conditional to the two previous cases. I have not done this part yet becuase I want to ensure that #1 and #2 work first.
 
+**November 2, 2022** Uploaded prototype 3.0 -- a fully functioning final draft. All options are now implemented, as will be demostrated below. The only two additions I still have to make is adding a loop to continue asking the user to enter new terms and add a "quit" option. As of now, the program executes only once. I also kept all prints to see that tokens and lemmas are correct, but this information is redundant for the user, so I will remove it from the final version. Also, I will have to find a complete Latin->English dictionary, as opposed to the small testing one I have.
+
+Menu & option #1:
+![](Pictures/menu_and_1.PNG)
+
+Option #2
+![](Pictures/2.PNG)
+
+Option #3
+![](Pictures/3_a.PNG)
+![](Pictures/3_b.PNG)
 
 ## A Word on u/v and i/j
 In Latin, letters "u" and "v" are often being used interchangeably, as well as "i" and "j". When working with a large text, it is important to standardize data, and change all "v" characters to "u" and all "j" characters to "i". When I first started familiarizing myself with CLTK, I took a Latin text and standardized it by changing the aforementioned letters to fit a single standard with the help of JVReplacer(). However, my dictionary works with a user's input, which is later processed by many other functions which do not need the text to be standardized. In fact, this kind of standardization can render a word unrecognizable. For instance, the function can recognize the word for "door", which is "janua", but would have trouble recognizing the less common spelling "ianua". Also, the word "wine", or "vinum" would not be recognized if it was spelled as "uinum". Ultimately, if there is a large text that needs to be standardized for further analysis, being consistent with the transcription is crucial, but when the goal is to translate a word or a short sentence, it is best to rely on the most common spelling.
