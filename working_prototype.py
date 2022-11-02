@@ -83,7 +83,7 @@ print('\n')
 #print("----------------------------")
 print("---------SENTENCE---------")
 sentence = sentences_list[0]
-print(sentence)
+print(type(sentence))
 print('\n')
 words = word_tokenization(sentence)
 print("--------------AFTER WORD TOKENIZATION---------")
