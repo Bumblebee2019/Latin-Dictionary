@@ -35,8 +35,11 @@ A user wants to see declension/ conjugation tables for her favorite quote by Sen
 First, the program will remove any non-Latin characters, such as commas and periods (yes, the user added weird punctuation to prove a point). The clean sentence is displayed under the "SENTENCES" comment. Then, we take the only element in the list, because we want to be working with a string. Under the "SENTENCE" header, the sentence displayed has a string type. The rest of the headers are quite self-explanatory. The goal is now to break the sentence into even smaller pieces, or "tokens", where each word is a token. Then, the lemmatization step is very important; it extracts the canonical form of the word from its declined version and puts the original word and its lemma in a pair. Then, we only work with a list of lemmas, from which we derive the conjugation table.
 ![](Pictures/veritas_numquam_perit.PNG)
 
-**November 1, 2022** Uploaded prototype 2.0, which now has a quaint user menu, which allows him to choose between several options. 
+
+**November 1, 2022** Uploaded prototype 2.0, which now has a quaint user menu, that allows the user to choose between several options. 
+
 ![](Pictures/menu.PNG)
+(after this, the word "acer" is conjugated, using the same process from the above scrrenshots)
 For #1, I tested with a static string "acer", which happens to be in my testing-size Latin to English dictionary (latin_to_english.txt). The output is the line number on which the word occured and the actual translation. The next step for #1 would be to extract the dictionary form of the word the user entered and passing it to the function instead of the hardcoded "acer". To achieve this, tokenization and lemmatization functionality must be encapsulated, because even if the user does not need to see the declension/conjugation table, the process must still run on the backround to extract the dictionary form of the word. This part successfully works.
 
 For #2, I did not add much, because I already had the functionality implemented. The only change thtat I made is that I made the executing of this code conditional, as opposed to the last prototype, which did not have user options
