@@ -36,6 +36,7 @@ First, the program will remove any non-Latin characters, such as commas and peri
 ![](Pictures/veritas_numquam_perit.PNG)
 
 **November 1, 2022** Uploaded prototype 2.0, which now has a quaint user menu, which allows him to choose between several options. 
+![](Pictures/menu.PNG)
 For #1, I tested with a static string "acer", which happens to be in my testing-size Latin to English dictionary (latin_to_english.txt). The output is the line number on which the word occured and the actual translation. The next step for #1 would be to extract the dictionary form of the word the user entered and passing it to the function instead of the hardcoded "acer". To achieve this, tokenization and lemmatization functionality must be encapsulated, because even if the user does not need to see the declension/conjugation table, the process must still run on the backround to extract the dictionary form of the word. This part successfully works.
 
 For #2, I did not add much, because I already had the functionality implemented. The only change thtat I made is that I made the executing of this code conditional, as opposed to the last prototype, which did not have user options
