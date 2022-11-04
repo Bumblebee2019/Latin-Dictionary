@@ -11,9 +11,9 @@ The final version of the dictionary will have a user menu with the following opt
 1) Display a Latin->English translation of the entered word
 2) Display a conjugation/declension table for the entered word/sentence
 3) Display both the table and the translation
+0) Quit the program
 
-A user will be prompted to enter a Latin term or sentence. Then, the menu described above will appear and by pressing 1, 2, or 3 on the keyboard, the user can choose
-the option he needs.
+A user will be prompted to enter a Latin term or sentence. Then, the menu described above will appear and by pressing 1, 2, 3, or 0 on the keyboard, the user can choose the option he needs.
 
 (The "Progress" paragraph below discusses the current stage the project is in)
 
