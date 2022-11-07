@@ -64,8 +64,11 @@ Option #3
 ![](Pictures/3_a.PNG)
 ![](Pictures/3_b.PNG)
 
-**November 2, 2022** Uploaded the most recent version. Now, the program loops back, asking user for a new option, until he presses 0 to quit.
+**November 2, 2022** Now, the program loops back, asking user for a new option, until he presses 0 to quit.
 ![](Pictures/1_loop.PNG)
+
+**November 7, 2022** In this version, I made declension/conjugation output human-readable, as opposed to just printing a list structure.
+![](Pictures/readable_output.PNG)
 
 ## A Word on u/v and i/j
 In Latin, letters "u" and "v" are often being used interchangeably, as well as "i" and "j". When working with a large text, it is important to standardize data, and change all "v" characters to "u" and all "j" characters to "i". When I first started familiarizing myself with CLTK, I took a Latin text and standardized it by changing the aforementioned letters to fit a single standard with the help of JVReplacer(). However, my dictionary works with a user's input, which is later processed by many other functions which do not need the text to be standardized. In fact, this kind of standardization can render a word unrecognizable. For instance, the function can recognize the word for "door", which is "janua", but would have trouble recognizing the less common spelling "ianua". Also, the word "wine", or "vinum" would not be recognized if it was spelled as "uinum". Ultimately, if there is a large text that needs to be standardized for further analysis, being consistent with the transcription is crucial, but when the goal is to translate a word or a short sentence, it is best to rely on the most common spelling.
