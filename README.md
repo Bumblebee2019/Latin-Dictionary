@@ -9,7 +9,7 @@ unfamiliar verbs and nouns, and knowing tense, gender, and case is vital to the 
 ## How to Run the Dictionary
 
 First, install CLTK. Consult this page for details: https://docs.cltk.org/en/latest/installation.html
-Then, clone the project and run with the command line: python latin.py
+Then, clone the project and run with the command line: ``` python latin.py ```
 
 
 ## Dictionary Functionality
