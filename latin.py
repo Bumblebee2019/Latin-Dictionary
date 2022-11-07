@@ -12,6 +12,14 @@ import linecache
 
 
 ##==========================if user option is 2=========================#
+def formatter(declined):
+	words=[]
+	for _, value in declined.items():
+		words = value
+	for pair in words:
+		word_1, word_2 = pair
+		print(word_1 + ", " + word_2)
+
 def jvtext(user_input):
   j = JVReplacer()
   user_input = j.replace(user_input)
@@ -110,9 +118,10 @@ def returns_based_on_options(option):
   if option == '2' or option == '3':
     if(option == '2') :
       print("Dictionary form: ", lemma_list)
-    print("                 ------------------DECLINATION/CONJUGATION TABLE---------------")
+    print("                 ------------------DECLENSION/CONJUGATION TABLE---------------")
     declined = decline(lemma_list)
-    print(declined)
+    formatter(declined)
+    #print(declined)
   
 #=========================Getting user input==========================#
 print("*************************************************\n")
@@ -121,6 +130,7 @@ print("*************************************************")
 print("You can press the numbers associated with each option:")
 
 while (1):
+  print('\n')
   print("                 Menu:\n")
   print("1 -- only translate Latin -> English")
   print("2 -- only decline/conjuagete the Latin term")
